@@ -1,12 +1,15 @@
-val name = "padma"
 fun main(args: Array<String>) {
-    var num1 = 45
-    println("Initial value of num1 $num1")
-    num1++
-    println("The new value of num1 is $num1")
+    val myInt = 42
+    val myLong:Long = myInt.toLong()
+    println("the type of myLong is ${myLong::class.qualifiedName}")
 
-    val num2:Double = 5.toDouble()
-    println("The value of num2 is $num2")
+    val myLong2 = 49.9
+    val myInt2 = myLong2.toInt()
+    println("the value of myLong2 is $myLong2")
+    println("the value of myInt2 $myInt2")
 
-    println("My name is $name")
+    val myInt3 = 568
+    val myDouble = myInt3.toDouble()
+    println("the value of myDouble $myDouble")
+
 }
