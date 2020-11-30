@@ -1,28 +1,34 @@
 import kotlin.math.abs
-import kotlin.math.absoluteValue
 import kotlin.math.round
 
 fun main(args: Array<String>) {
-    val num1 = 15
-    val num2 = 30
+    var aString = "Hello!"
+    println(aString)
 
-    val sum:Int = num1.plus(num2)
-    println("Sum $sum")
+    val empty = String()
+    println("'$empty'")
 
-    val diff:Int = num1.minus(num2)
-    println("diff : $diff")
+    val charArray:CharArray = aString.toCharArray()
+    println(charArray.toList())
 
-    val product:Int = num1.times( num2)
-    println("Product: $product")
+    val byteArray:ByteArray = aString.toByteArray()
+    println(byteArray.toList())
 
-    val quotient:Double = num1.toDouble()/num2.toDouble()
-    println("Quotient : $quotient")
+    aString += " and welcome!!"
+    println(aString)
 
-    val reminder:Int = num1.rem(num2)
-    println("Reminder : $reminder")
+    val len:Int = aString.length
+    for(i:Int in 0 until  len){
+       val c:Char = aString.get(i)
+        println(c)
+    }
 
-    val neg = -150.9
-    val abs:Double = abs(neg)
-    println("Absolute : $abs")
-    println("rounded : ${round(neg)}")
+    val p:Int = aString.indexOf("w")
+    val subString:String = aString.substring(p)
+    println("Substring : $subString")
+
+    val string2:String = aString.toUpperCase()
+    val match = aString.equals(string2, true)
+
+    println("Match : $match")
 }
