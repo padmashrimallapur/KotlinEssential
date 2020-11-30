@@ -1,15 +1,10 @@
 fun main(args: Array<String>) {
-    val myInt = 42
-    val myLong:Long = myInt.toLong()
-    println("the type of myLong is ${myLong::class.qualifiedName}")
+    val num1 = 15
+    val num2 = 15
 
-    val myLong2 = 49.9
-    val myInt2 = myLong2.toInt()
-    println("the value of myLong2 is $myLong2")
-    println("the value of myInt2 $myInt2")
+    val match:Boolean = (num1 == num2)
+    println("Match = $match")
 
-    val myInt3 = 568
-    val myDouble = myInt3.toDouble()
-    println("the value of myDouble $myDouble")
-
+    val match2 = (num1.compareTo(num2))
+    println("Match2 = $match2")
 }
